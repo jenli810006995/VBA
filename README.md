@@ -1,2 +1,2 @@
 # VBA
-Some VBA scripts 
+Some VBA scripts for projects and applications
