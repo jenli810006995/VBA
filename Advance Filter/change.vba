@@ -9,8 +9,9 @@ Private Sub Worksheet_Change(ByVal Target As Range)
   ' if the criteria is only one row, meaning there is no filter
   
   If shData.Range("A1").CurrentRegion.Rows.Count = 1 Then
-  ' clear the filter
-    clearfilter
+        ' clear the filter, ctrl+ space is auto-complete
+        ' can also use shData.ShowAllData if not initiate the sub for ClearFilter() 
+     ClearFilter
 
   ElseIf Not Application.Intersect(Target, shData.Range("A1").CurrentRegion) Is Nothing Then
   ' this means if a target cell within our criteria, then we want to call the advanced filter
