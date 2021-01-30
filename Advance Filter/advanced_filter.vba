@@ -38,7 +38,7 @@ Sub UseAdvancedFilterInPlace()
 End Sub
 
 
-Sub clearfilter()
+Sub ClearFilter()
 
   If ThisWorkbook.Worksheets("Data").FilterMode = True Then
       ThisWorkbook.Worksheets("Data").ShowAllData
